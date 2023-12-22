@@ -1,8 +1,12 @@
 import React from 'react'
+import HeadSlider from '../components/HeadSlider'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <HeadSlider/>
+
+    </div>
   )
 }
 

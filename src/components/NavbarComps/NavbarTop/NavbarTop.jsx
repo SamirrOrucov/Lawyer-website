@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import "./index.scss"
 function NavbarTop() {
   return (
@@ -11,7 +11,7 @@ function NavbarTop() {
             <div className="navbarTop_container_icons">
                 <div className="date">
                     <div className="date_top">
-                        <div className="date_top_icn"><i class="fa-regular fa-clock"></i></div>
+                        <div className="date_top_icn"><i className="fa-regular fa-clock"></i></div>
                         <div className="date_top_time"><p>9:00-18:00</p></div>
                         </div>
                         <div className="date_bottom">
@@ -21,7 +21,7 @@ function NavbarTop() {
                 </div>
                 <Link to={"tel:0775147770"}><div className="call">
                 <div className="call_top">
-                        <div className="call_top_icn"><i class="fa-solid fa-phone"></i></div>
+                        <div className="call_top_icn"><i className="fa-solid fa-phone"></i></div>
                         <div className="call_top_number"><p>077-514-77-70</p></div>
                         
                         </div>
@@ -32,14 +32,39 @@ function NavbarTop() {
                         </div>
 
                 </div></Link>
-                <div className="instagram">
-                <i class="fa-brands fa-instagram"></i><p>Instagram</p>
+                <div className="instagram sIcons">
+                <i className="fa-brands fa-instagram"></i><p>Instagram</p>
                 </div>
-                <div className="facebook"><i class="fa-brands fa-facebook-f"></i><p>Facebook</p></div>
-                <div className="twitter"><i class="fa-brands fa-x-twitter"></i><p>Twitter</p></div>
-                <div className="whatsapp"><i class="fa-brands fa-whatsapp"></i><p>Whatsapp</p></div>
+                <div className="facebook sIcons"><i className="fa-brands fa-facebook-f"></i><p>Facebook</p></div>
+                <div className="twitter sIcons"><i className="fa-brands fa-x-twitter"></i><p>Twitter</p></div>
+                <div className="whatsapp sIcons"><i className="fa-brands fa-whatsapp"></i><p>Whatsapp</p></div>
+                <div className="menu"><i className="fa-solid fa-bars"></i></div>
+
+
 
             </div>
+        </div>
+        <div className="hidden_NavbarMain">
+        <ul>
+          <NavLink>
+            HOME <i className="fa-solid fa-star"></i>
+          </NavLink>
+          <Link>
+            TEAM <i className="fa-solid fa-star"></i>
+          </Link>
+          <Link>
+            BLOG <i className="fa-solid fa-star"></i>
+          </Link>
+          <Link>
+            OUR EXPERTISE <i className="fa-solid fa-star"></i>
+          </Link>
+          <Link>
+            SHOP <i className="fa-solid fa-star"></i>
+          </Link>
+          <Link>
+            ELEMENTS <i className="fa-solid fa-star"></i>
+          </Link>
+        </ul>
         </div>
     </div>
   )
