@@ -1,0 +1,64 @@
+#experiencedAttorneysSection{
+    max-width: 100vw;
+    .ExperiencedAttorneysSection_Container{
+        max-width: 70%;
+        margin: 100px auto;
+        display: flex;
+        .ExperiencedAttorneysSection_Container_Left{
+            display: flex;
+            flex-direction: column;
+            gap: 12%;
+            .ExperiencedAttorneysSection_Container_HeadText{
+                text-align: center;
+                font-size: 36px;
+                p{
+                    font-family: 'Cormorant', serif;
+                }
+            }
+        }
+        .ExperiencedAttorneysSection_Container_Right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 40px;
+            &_Text{
+                display: flex;
+                color: #666666;
+                font-size: 18px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 30px;
+                text-align: start;
+                .L{
+                    font-size: 120px;
+                    color: black;
+                    font-family: 'Cormorant', serif;
+                    
+                }
+            }
+            &_Text_Bottom{
+                display: flex;
+                color: #666666;
+                font-size: 18px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 30px;
+                text-align: start;
+            }
+            .ExperiencedAttorneysSection_Container_Images{
+                display: flex;
+                gap: 25px;
+                .ExperiencedAttorneysSection_Container_Images_Div{
+    
+                    img{
+                            width: 100%;
+                        object-fit: contain;
+                    }
+                }
+    
+            }
+
+        }
+       
+    }
+
+
+}
