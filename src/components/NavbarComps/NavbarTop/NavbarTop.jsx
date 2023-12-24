@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./index.scss"
 function NavbarTop() {
+  const [show, setShow] = useState(false)
+  function handleShowNavbar() {
+    setShow(!show)
+    
+  }
   return (
     <div id='navbarTop'>
         <div className="navbarTop_container">
@@ -38,13 +43,14 @@ function NavbarTop() {
                 <div className="facebook sIcons"><i className="fa-brands fa-facebook-f"></i><p>Facebook</p></div>
                 <div className="twitter sIcons"><i className="fa-brands fa-x-twitter"></i><p>Twitter</p></div>
                 <div className="whatsapp sIcons"><i className="fa-brands fa-whatsapp"></i><p>Whatsapp</p></div>
-                <div className="menu"><i className="fa-solid fa-bars"></i></div>
+                <div className="menu" onClick={handleShowNavbar}><i className="fa-solid fa-bars"></i></div>
 
 
 
             </div>
         </div>
-        <div className="hidden_NavbarMain">
+        <div className="hidden  ">
+        <div className={`hidden_NavbarMain ${ show?"show_hidden_NavbarMain":""} `}>
         <ul>
           <NavLink>
             HOME <i className="fa-solid fa-star"></i>
@@ -65,6 +71,7 @@ function NavbarTop() {
             ELEMENTS <i className="fa-solid fa-star"></i>
           </Link>
         </ul>
+        </div>
         </div>
     </div>
   )

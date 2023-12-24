@@ -1,9 +1,50 @@
 import React from 'react'
-import "slick-carousel/slick/slick.css"; 
+import Slider from 'react-slick';
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"; 
+import "./index.scss"
 function HeadSlider() {
+  const settings = {
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+     autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+  };
   return (
-    <div>HeadSlider</div>
+    
+    <div id='headSlider'>
+        <Slider {...settings}>
+          
+          <div>
+            <img src="https://justicia.qodeinteractive.com/wp-content/uploads/2018/09/h2-img-1.jpg" />
+            <div className="text">
+              <h2>Client Focused</h2>
+              <p>The best law practices & services for all your legal needs.</p>
+              <button>Call Us</button>
+            </div>
+          </div>
+          <div>
+            <img src="https://justicia.qodeinteractive.com/wp-content/uploads/2018/10/h2-slider-3.jpg" />
+            <div className="text">
+              <h2>Client Focused</h2>
+              <p>The best law practices & services for all your legal needs.</p>
+              <button>Call Us</button>
+            </div>
+          </div>
+          <div>
+            <img src="https://justicia.qodeinteractive.com/wp-content/uploads/2018/10/h2-slider-2.jpg" />
+            <div className="text">
+              <h2>Client Focused</h2>
+              <p>The best law practices & services for all your legal needs.</p>
+              <button>Call Us</button>
+            </div>
+          </div>
+        </Slider>
+      </div>
   )
 }
 

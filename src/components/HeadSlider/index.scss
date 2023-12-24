@@ -1,0 +1,130 @@
+#headSlider {
+  .slick-slider {
+    position: relative;
+    .text {
+      top: 35%;
+      left: 30%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h2 {
+        font-size: 137px;
+        font-weight: 500;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      p {
+        font-size: 18px;
+      }
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+    }
+    button {
+      width: 250px;
+      height: 60px;
+      cursor: pointer;
+      border: none;
+      transition: 400ms;
+      &:hover {
+        background-color: #166d70;
+        color: white;
+      }
+    }
+
+    .slick-arrow {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .slick-slider {
+    div {
+      img {
+        max-width: 120% !important;
+      }
+    }
+    .text {
+      top: 15% !important;
+      left: 8% !important;
+      gap: 10px !important;
+
+      h2 {
+        font-size: 40px !important;
+        font-weight: 600;
+      }
+      p {
+        font-size: 12px !important;
+      }
+    }
+    button {
+      width: 150px !important;
+      height: 40px !important;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slick-slider {
+    div {
+      img {
+        max-width: 100% !important;
+      }
+    }
+    .text {
+      top: 15% !important;
+      left: 17% !important;
+
+      h2 {
+        font-size: 54px !important;
+        font-weight: 600;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+    button {
+      width: 150px !important;
+      height: 40px !important;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slick-slider {
+    div {
+      img {
+        max-width: 100% !important;
+      }
+    }
+    .text {
+      top: 15% !important;
+      left: 21% !important;
+
+      h2 {
+        font-size: 64px !important;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .slick-slider {
+    div {
+      img {
+        max-width: 120% !important;
+      }
+    }
+    .text {
+      top: 15% !important;
+      h2 {
+        font-size: 94px !important;
+        font-weight: 600;
+      }
+    }
+  }
+}
