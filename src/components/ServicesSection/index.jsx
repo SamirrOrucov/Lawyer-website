@@ -3,9 +3,9 @@ import "./index.scss"
 
 function ServicesSection() {
   return (
-    <div id="servicesSection">
-      <div className="servicesSection_container">
-        <div className="servicesSection_container_card">
+    <div id="servicesSection" >
+      <div className="servicesSection_container" data-aos="fade-right">
+        <div className="servicesSection_container_card" data-aos="flip-left"  data-aos-offset="300">
           <div className="icn">
             <i class="fa-solid fa-building-columns"></i>
           </div>
@@ -24,7 +24,7 @@ function ServicesSection() {
           </div>
 </div>
         </div>
-        <div className="servicesSection_container_card">
+        <div className="servicesSection_container_card" data-aos="flip-left"  data-aos-offset="350">
           <div className="icn">
             <i class="fa-solid fa-building-columns"></i>
           </div>
@@ -43,7 +43,7 @@ function ServicesSection() {
           </div>
 </div>
         </div>
-        <div className="servicesSection_container_card">
+        <div className="servicesSection_container_card" data-aos="flip-left"  data-aos-offset="400">
           <div className="icn">
             <i class="fa-solid fa-building-columns"></i>
           </div>
@@ -62,7 +62,7 @@ function ServicesSection() {
           </div>
 </div>
         </div>
-        <div className="servicesSection_container_card cardNoBorder">
+        <div className="servicesSection_container_card cardNoBorder" data-aos="flip-left"  data-aos-offset="450">
           <div className="icn">
             <i class="fa-solid fa-building-columns"></i>
           </div>

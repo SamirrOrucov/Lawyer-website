@@ -12,7 +12,7 @@
     gap: 70px;
     height: 100%;
     &_card {
-        border-right:  1px solid #666666;
+      border-right: 1px solid #666666;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -32,7 +32,7 @@
         font-family: cormorat;
         font-size: 25px;
         color: white;
-        transition: 300ms;
+        transition: 400ms ease-in-out;
       }
       .description {
         color: white;
@@ -48,14 +48,16 @@
         position: absolute;
         opacity: 0;
         color: white;
-        .hiddenDescription{
-            text-align: center;
+        transition: 400ms ease-in-out;
 
+        .hiddenDescription {
+          text-align: center;
+          transition: 400ms ease-in-out;
         }
         i {
           color: #e5936b;
           font-size: 0;
-          transition: 300ms;
+          transition: 400ms ease-in-out;
         }
       }
       &:hover {
@@ -76,8 +78,8 @@
         }
       }
     }
-    .cardNoBorder{
-        border: none;
+    .cardNoBorder {
+      border: none;
     }
   }
 }
