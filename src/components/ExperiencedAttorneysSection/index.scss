@@ -62,3 +62,87 @@
 
 
 }
+@media (max-width: 575.98px) { 
+
+    .ExperiencedAttorneysSection_Container{
+        max-width: 90%;
+        .ExperiencedAttorneysSection_Container_Left{
+            gap: 2% !important;
+            .ExperiencedAttorneysSection_Container_HeadText{
+                font-size: 16px !important;
+              
+            }
+        }
+        .ExperiencedAttorneysSection_Container_Right{
+            gap: 40px;
+            &_Text{
+                width: 400px !important;
+                font-size: 16px !important;
+                line-height: 25px !important;
+                .L{
+                    font-size: 120px;
+                }
+            }
+            &_Text_Bottom{
+                font-size: 15px !important;
+                line-height: 24px !important;
+            }
+            .ExperiencedAttorneysSection_Container_Images{
+                max-width: 70% !important;
+                .ExperiencedAttorneysSection_Container_Images_Div{
+                    img{
+                            width: 100% !important;
+                    }
+                }
+    
+            }
+
+        }
+       
+    }
+
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .ExperiencedAttorneysSection_Container{
+        max-width: 90%;
+        .ExperiencedAttorneysSection_Container_Left{
+            gap: 12%;
+            .ExperiencedAttorneysSection_Container_HeadText{
+                font-size: 36px;
+              
+            }
+        }
+        .ExperiencedAttorneysSection_Container_Right{
+            gap: 40px;
+            &_Text{
+                width: 400px !important;
+                font-size: 16px !important;
+                line-height: 25px !important;
+                .L{
+                    font-size: 120px;
+                }
+            }
+            &_Text_Bottom{
+                font-size: 15px !important;
+                line-height: 24px !important;
+            }
+            .ExperiencedAttorneysSection_Container_Images{
+                .ExperiencedAttorneysSection_Container_Images_Div{
+                    img{
+                            width: 130%;
+                    }
+                }
+    
+            }
+
+        }
+       
+    }
+
+
+
+  }

@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
 function NavbarMain() {
+  const [stickyClass, setStickyClass] = useState("");
+  useEffect(() => {
+    window.addEventListener("scroll", stickyNavbar);
+    return () => window.removeEventListener("scroll", stickyNavbar);
+  }, []);
+  const stickyNavbar=()=>{
+    if (window!==undefined) {
+      let windowHeight=window.scrollY;
+        windowHeight>350? setStickyClass("sticky-nav"):setStickyClass("")
+      
+    }
+  }
+
   return (
-    <div id="navbarMain">
+    <div id="navbarMain" className={`${stickyClass}`}>
       <div className="navbarMain_container">
         <ul>
           <NavLink>
@@ -26,7 +39,9 @@ function NavbarMain() {
           </Link>
         </ul>
         <div className="callButton">
-            <button>Call Now <i class="fa-solid fa-scale-balanced"></i></button>
+          <button>
+            Call Now <i class="fa-solid fa-scale-balanced"></i>
+          </button>
         </div>
       </div>
     </div>
